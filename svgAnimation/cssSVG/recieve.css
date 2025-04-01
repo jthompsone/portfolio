@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 5em auto;
+}
+
+.wrapper {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+#arrow {
+    fill: red;
+    animation: fadeInOut 3s linear 0.2s infinite,
+                down 3s linear 0.2s infinite;
+}
+
+#pellet {
+    fill: gold;
+    transform-origin: 100% 100%;
+    transform-box: fill-box;
+    animation: down 1.5s ease-in-out 0.2s infinite alternate backwards;
+}
+
+#motion {
+    transform-origin: 0% 100%;
+    transform-box: fill-box;
+    animation: down 1.5s ease-in-out 0.2s infinite alternate backwards;
+}
+
+
+@keyframes down {
+    0% {transform: translateY(-15%);}
+    100% {transform: translateY(5%);}
+}
+
+@keyframes fadeInOut {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}

@@ -1,0 +1,237 @@
+/* font-family: 'Allison', cursive;
+font-family: 'Raleway', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    background-color: black;
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav {
+    display: flex;
+    column-gap: 30px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 3px 9px;
+
+}
+nav a:hover {
+    color: orange;
+}
+
+.toggle {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+/* the following rule will style the bars */
+i.fa-bars {
+    color: white;
+    font-size: 30px;
+    align-self: center;
+}
+
+#hero {
+    height: 60vh;
+}
+#hero img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+} 
+#savings {
+    margin: 10px 90px 30px;
+}
+#savings>div {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#savings>div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+#savings h3 {
+    text-align: center;
+}
+article {
+    background-color: purple;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1 {
+    font-family: 'Allison', cursive;
+    font-size: 80px;
+    color: orange;
+}
+h2 {
+    font-family: 'Allison', cursive;
+    font-size: 60px;
+    color: white;
+}
+h3 {
+    font-family: 'Allison', cursive;
+    font-size: 80px;
+    color: orange;
+}
+h4 {
+    font-family: 'Allison', cursive;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+h5 {
+    color: purple;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    color: rgb(235, 226, 245);
+}
+i {
+    font-size: 50px;
+    color: orange;
+}
+article a {
+    background-color: white;
+    color: purple;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    align-self: center;
+}
+#gallery {
+    background-color: black;
+    padding: 40px 90px;
+}
+#gallery div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+#gallery img {
+    flex-grow: 1;
+}
+footer {
+    background-color: orange;
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+footer i {
+    font-size: 30px;
+    color: white;
+}
+footer>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+span#icons {
+    align-self: center;
+}
+
+/* tablet */
+@media (max-width: 825px) {
+    body {
+        background-color: rgb(255, 236, 239);
+    }
+    header {
+        padding: 30px
+    }
+    h1 {
+        font-size: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        padding: 10px 5px;
+    }
+    #savings {
+        margin: 10px 30px 30px;
+    }
+    #savings h3 {
+        font-size: 65px;
+    }
+    #gallery h2 {
+        font-size: 50px;
+    }
+    footer h4 {
+        font-size: 48px;
+        flex: 100%;
+    }
+    footer span:last-of-type {
+        flex: 100%;
+    }
+}
+
+/* Toggle hamburger menu */
+@media (max-width: 700px) {
+    .toggle {
+        display: block;
+        align-self: center;
+    }
+        
+    nav {
+        flex: 100%;
+        display: none;
+        text-align: center;
+        row-gap: 8px;
+    }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+    body {
+        background-color: rgb(128, 180, 180);
+    }
+    #savings h3 {
+        font-size: 60px;
+    }
+    article {
+        flex: 100%;
+    }
+    #gallery {
+        padding: 40px;
+    }
+    #gallery h2 {
+        font-size: 50px;
+    }
+    footer h4 {
+        font-size: 45px;
+        text-align: center;
+    }
+    footer span {
+        text-align: center;
+    }
+}

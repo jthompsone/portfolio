@@ -1,0 +1,363 @@
+* {
+   padding: 0px;
+   margin: 0px;
+   font-family: 'Roboto Flex', sans-serif;
+   font-size: 24pt;
+}
+
+body {
+   background-color: #F28729;
+}
+
+.parent {
+   display: block;
+}
+
+.one {
+   background: url(../images/tetris1.jpg) bottom center;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+}
+
+.one > img {
+   height: auto;
+   width: 100%;
+   display: block;
+   margin: auto auto;
+   align-items: center;
+   animation: leftSlideIn 2s ease-in-out 0.1s 1 both,
+               fadeIn 1s linear 1 both;
+}
+
+.two {
+   background: url(../images/foxlook.jpg) no-repeat;
+   background-size: cover;
+   height: 600px;
+   padding: 8%;
+}
+
+.two > p {
+   position: relative;
+   top: 95%;
+   animation: fadeIn 1s linear 5s 1 both;
+}
+
+.three {
+   background: url(../images/foxjump.jpg) center 20%;
+   background-size: cover;
+   height: 600px;
+   padding: 8%;
+}
+
+.three > p:first-child {
+   animation: fadeIn 1s linear 7s 1 both;
+}
+
+.three > p:last-child {
+   position: relative;
+   top: 85%;
+   text-align: end;
+   animation: fadeIn 1s linear 8s 1 both;
+}
+
+.four {
+   background: url(../images/foxfall.jpeg) bottom center;
+   background-size: cover;
+   height: 700px;
+   padding: 8%;
+}
+
+.four > p {
+   text-align: center;
+}
+
+.four > p:first-child {
+   animation: fadeIn 1s linear 10s 1 both;
+}
+
+.four > p:last-child {
+   position: relative;
+   top: 90%;
+   animation: fadeIn 1s linear 11s 1 both;
+}
+
+.five {
+   background: url(../images/realtetris.jpg) bottom center;
+   background-size: cover;
+   display: flex;
+   overflow: hidden;
+}
+
+.five > img {
+   height: auto;
+   width: 100%;
+   display: block;
+   margin: auto auto;
+   animation: leftSlideIn 2s ease-in-out 3s 1 both,
+               fadeIn 1s linear 3s 1 both;
+}
+
+.six {
+   background: url(../images/foxface.jpg) left center;
+   background-size: cover;
+   height: 900px;
+   padding: 8%;
+}
+
+.six > p {
+   position: relative;
+   top: 90%;
+}
+
+.six > p > span:first-child {
+   animation: fadeIn 1s linear 13s 1 both;
+}
+
+.six > p > span:last-child {
+   animation: fadeIn 1s linear 14s 1 both;
+}
+
+.white {
+   display: none;
+}
+
+.black {
+   background-color: #251E12;
+   display: none;
+}
+
+
+@keyframes leftSlideIn {
+   from {transform: translateX(-50%);}
+   to {transform: translateX(0%);}
+}
+
+@keyframes rightSlideIn {
+   from {transform: translateX(50%);}
+   to {transform: translateX(0%);}
+}
+
+@keyframes fadeIn {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+
+@keyframes textIn {
+   from {transform: translateY(150%);}
+   to {transform: translateY(0%);}
+}
+
+@keyframes slideDown {
+   from {transform: translateY(-300%);}
+   to {transform: translateY(0%);}
+}
+
+@keyframes bgColor {
+   from {background-color: #b7b7b7;}
+   to {background-color: #F28729;}
+}
+
+
+@media (min-width: 815px) {
+   * {
+      font-family: 'Roboto Flex', sans-serif;
+      font-size: 3vw;
+   }
+
+   body {
+      animation: bgColor 2s linear 1 both;
+   }
+
+   .parent {
+      display: grid;
+      grid-template-columns: 1fr 5fr 4fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+   }
+
+   .one {
+      background: url(../images/tetris1.jpg) bottom center;
+      background-size: cover;
+      grid-area: 1 / 2 / 2 / 3;
+      display: flex;
+      align-items: center;
+   }
+
+   .one > img {
+      height: auto;
+      width: 100%;
+      display: block;
+      margin: auto auto;
+      align-items: center;
+   }
+
+   .two {
+      background: url(../images/foxlook.jpg) no-repeat;
+      background-size: cover;
+      height: auto;
+      grid-area: 1 / 3 / 2 / 4;
+      padding: 10%;
+   }
+
+   .two > p {
+      position: relative;
+      top: 90%;
+   }
+
+   .three {
+      background: url(../images/foxjump.jpg) center left;
+      background-size: cover;
+      height: auto;
+      grid-area: 2 / 2 / 3 / 3;
+      padding: 10%;
+   }
+
+   .three > p:last-child {
+      position: relative;
+      top: 80%;
+      text-align: end;
+   }
+
+   .four {
+      background: url(../images/foxfall.jpeg) bottom center;
+      background-size: cover;
+      height: auto;
+      grid-area: 2 / 3 / 3 / 4;
+      padding: 10%;
+   }
+
+   .four > p {
+      text-align: center;
+   }
+
+   .four > p:last-child {
+      position: relative;
+      top: 80%;
+   }
+
+   .five {
+      background: url(../images/realtetris.jpg) bottom center;
+      background-size: cover;
+      height: auto;
+      grid-area: 3 / 2 / 4 / 3;
+      display: flex;
+   }
+
+   .five > img {
+      height: auto;
+      width: 100%;
+      display: block;
+      margin: auto auto;
+   }
+
+   .six {
+      background: url(../images/foxface.jpg) left center;
+      background-size: cover;
+      height: auto;
+      grid-area: 3 / 3 / 4 / 4;
+      padding: 10%;
+   }
+
+   .six > p {
+      position: relative;
+      top: 80%;
+   }
+
+   .white {
+      background-color: #F2F2F2;
+      grid-area: 2 / 1 / 3 / 5;
+      display: block;
+      z-index: -1;
+      animation: slideDown 1s linear 4s 1 both;
+   }
+
+   .black {
+      grid-area: 3 / 1 / 4 / 5;
+      display: block;
+      z-index: -2;
+      animation: slideDown 1s linear 2s 1 both;
+   }
+}
+
+@media (min-width: 1400px) {
+   * {
+      font-family: 'Roboto Flex', sans-serif;
+      font-size: 24pt;
+   }
+
+   body {
+      animation: bgColor 2s linear 1 both;
+   }
+   
+   .parent {
+      display: grid;
+      grid-template-columns: 1fr repeat(3, 3fr) 1fr;
+      grid-template-rows: repeat(2, 500px) 50px;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+   }
+      
+   .one {
+      grid-area: 1 / 2 / 2 / 3;
+      display: block;
+   }
+
+   .one > img {
+      height: auto;
+      width: 100%;
+      max-height: 500px;
+      max-width: 528px;
+      display: flex;
+      margin: auto;
+      align-items: center;
+      animation: leftSlideIn 2s ease-in-out 0.1s 1 both,
+                  fadeIn 1s linear 1 both;
+   }
+   /* How Do I get the Mask Image to fit both vertically and horizontally while not being cropped? */
+
+   .two {
+      grid-area: 1 / 3 / 2 / 4;
+   }
+   
+   .three {
+      background: url(../images/foxjump.jpg) center 20%;
+      background-size: cover;
+      grid-area: 1 / 4 / 2 / 5;
+   }
+   .four {
+      grid-area: 2 / 2 / 3 / 3;
+   }
+
+   .five {
+      grid-area: 2 / 4 / 3 / 5;
+   }
+
+   .five > img {
+      height: auto;
+      width: 100%;
+      display: block;
+      margin: auto auto;
+      animation: rightSlideIn 2s ease-in-out 3s 1 both,
+                  fadeIn 1s linear 3s 1 both;
+   }
+
+   .six {
+      grid-area: 2 / 3 / 3 / 4;
+
+   }
+
+   .white {
+      display: block;
+      grid-area: 2 / 1 / 3 / 6;
+      z-index: -1;
+   }
+
+   .black {
+      grid-area: 3 / 1 / 4 / 6;
+      display: block;
+      z-index: -1;
+   }
+}
