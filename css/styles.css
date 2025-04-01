@@ -1,0 +1,24 @@
+body {
+    background-color: aliceblue;
+    color: #000000;
+    padding: 8px 5%;
+}
+
+hr {
+    width: 75%;
+    margin: 25px auto;
+}
+
+img#james {
+    height: 500px;
+    width: auto;
+    margin: 10px auto 10px 5%;
+}
+
+p#email {
+    margin-left: 5%;
+}
+
+li {
+    margin-bottom: 3px;
+}
