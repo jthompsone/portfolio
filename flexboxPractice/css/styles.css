@@ -48,7 +48,7 @@ i.fa-bars {
     height: 60vh;
 }
 #hero img {
-    max-height: 100vw;
+    height: auto;
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
