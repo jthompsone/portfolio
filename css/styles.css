@@ -13,6 +13,10 @@ hr {
     margin: 25px auto;
 }
 
+h1 {
+    margin-left: 5%;
+}
+
 img#james {
     height: 500px;
     width: auto;
