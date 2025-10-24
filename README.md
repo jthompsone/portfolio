@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @jthompsone
 - 👀 I’m interested in web design and animation
-- 🌱 I’m currently learning web design, almost done!
+- 🌱 I’m currently learning web design in college, and will graduate December 2025!
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I've been scripting in HTML and CSS for over a decade!
 
