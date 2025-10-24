@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--    links to font awesome set of icons -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allison&family=Raleway:wght@100;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <title>Flexbox Practice - Thompson</title>
+    </head>
+    <body>
+        <header>
+            <h1>Halloween Shop</h1>
+
+            <a href="#" class="toggle"> <i class="fas fa-bars"></i></a>
+
+            <nav class="items">
+                <a href="#">HOME</a>
+                <a href="#">Purchase</a>
+                <a href="#">Directions</a>
+            </nav>
+        </header>
+        <section id="hero">
+            <picture>
+                <source
+                    media="(max-width:450px)"
+                    srcset="images/mobilePumpkin.jpg"
+                />
+                <source
+                    media="(max-width:825px)"
+                    srcset="images/tabletPumpkin.jpg"
+                />
+                <source
+                    media="(max-width:1000px)"
+                    srcset="images/desktopPumpkin.jpg"
+                />
+                <img src="images/desktopPumpkin.jpg" alt="Jack-o-lantern" />
+            </picture>
+        </section>
+        <section id="savings">
+            <h3>Spooktactular Savings</h3>
+
+            <div>
+                <article>
+                    <div>
+                        <h2>Costumes</h2>
+                        <i class="fas fa-ghost"></i>
+                        <p>
+                            We have the classics, along with costumes you'll
+                            find nowhere else! All sizes, infant through adult.
+                            Pets, too!
+                        </p>
+                    </div>
+                    <a href="#">Costumes</a>
+                </article>
+
+                <article>
+                    <div>
+                        <h2>Decorations</h2>
+                        <i class="fas fa-spider"></i>
+                        <p>
+                            Spooky, creepy, scary, or just plain silly, we have
+                            all your decoration needs. From exterior, party
+                            favors, there is something for every decorating
+                            need.
+                        </p>
+                    </div>
+                    <a href="#">Decorations</a>
+                </article>
+
+                <article>
+                    <div>
+                        <h2>Trick or Treat</h2>
+                        <i class="fas fa-cloud-moon"></i>
+                        <p>
+                            Did someome say treat? We have the best selection of
+                            candy around. Kids of all ages can indulge their
+                            sweet tooth,
+                        </p>
+                    </div>
+                    <a href="#">Candy & Treats</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Happy Halloween</h2>
+            <div>
+                <img src="images/pexels-cottonbro-5427449.jpg" alt="" />
+                <img src="images/pexels-daisy-anderson-5581154.jpg" alt="" />
+                <img src="images/pexels-daisy-anderson-5581167.jpg" alt="" />
+                <img src="images/pexels-daisy-anderson-5590094.jpg" alt="" />
+                <img src="images/pexels-matheus-bertelli-1789541.jpg" alt="" />
+                <img src="images/pexels-matheus-bertelli-5477425.jpg" alt="" />
+                <img src="images/pexels-thirdman-5415710.jpg" alt="" />
+                <img src="images/pexels-yaroslav-shuraev-5607359.jpg" alt="" />
+            </div>
+        </section>
+        <footer>
+            <h4>Halloween Shop</h4>
+            <div>
+                <span>
+                    <h5>Contact Us</h5>
+                    shop@halloween.com<br />
+                    800-555-1212
+                </span>
+                <span>
+                    <h5>Visit Us</h5>
+                    Halloween Shop<br />
+                    666 Spirit Drive<br />
+                    Madison, WI 53442
+                </span>
+                <span id="icons">
+                    <i class="fab fa-yelp"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </div>
+        </footer>
+
+        <script>
+            // toggleButton.addEventListener('click') callback
+            const toggleButton = document.getElementsByClassName("toggle")[0];
+            const navbarLinks = document.getElementsByClassName("items");
+            toggleButton.addEventListener("click", function () {
+                for (var i = 0; i < navbarLinks.length; i++)
+                    navbarLinks[i].classList.toggle("active");
+            });
+        </script>
+    </body>
+</html>
