@@ -12,11 +12,12 @@ body {
     height: auto;
     margin: auto;
 }
- #squiggles {
+
+#squiggles {
     fill: darkred;
     transform-origin: 50% 50%;
     animation: fadeInOut 1.5s linear 0.2s infinite alternate forwards,
-                rotate 1.5s linear 0.2s infinite alternate;
+        rotate 1.5s linear 0.2s infinite alternate;
 }
 
 #armL {
@@ -36,21 +37,37 @@ body {
 }
 
 @keyframes rotate {
-    0% {transform: rotateZ(0deg);}
-    100% {transform: rotateZ(5deg);}
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(5deg);
+    }
 }
 
 @keyframes flail {
-    0% {transform: rotateZ(-10deg);}
-    100% {transform: rotateZ(10deg);}
+    0% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
 }
 
 @keyframes bobbing {
-    0% {transform: translateY(2%);}
-    100% {transform: translateY(0%);}
+    0% {
+        transform: translateY(2%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 @keyframes fadeInOut {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

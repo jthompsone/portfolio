@@ -1,0 +1,255 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+nav {
+    background-color: #ffffff;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav img {
+    height: 90px;
+    width: auto;
+    margin: 10px 20px;
+    padding: 5px;
+}
+
+nav div a {
+    margin: 15px 15px 10px 5px;
+    text-decoration: none;
+}
+
+a.button {
+    background-color: #62c64e;
+    color: #000000;
+    font-size: 16pt;
+    margin: 10px 0px;
+    padding: 5px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+header {
+    background: url("../images/E0F545Cardboard.png") #e0f545;
+    height: 700px;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+header img {
+    height: auto;
+    min-width: 350px;
+    width: 50%;
+    max-width: 600px;
+    margin: 200px 10% auto 10%;
+}
+
+header div {
+    width: 300px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 18pt;
+}
+
+main {
+    background-color: #ffffff;
+    height: 700px;
+    padding: 3%;
+    /* Messes things up:
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   flex-wrap: wrap;
+*/
+}
+
+/*
+main div {
+   width: auto;
+}
+*/
+
+main div img {
+    min-width: 400px;
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+main article {
+    /*
+   width: 49%;
+*/
+    padding-left: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section {
+    padding: 3%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section div img {
+    width: 400px;
+    height: auto;
+}
+
+section article {
+    min-width: 400px;
+    width: 49%;
+    padding: 0px 10px;
+}
+
+section#donate {
+    background-color: #f2d0a7;
+}
+
+section#volunteer {
+    background-color: #ffffff;
+}
+
+section#community {
+    background-color: #592b02;
+}
+
+section#community h1 {
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+
+section#community div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section#community div img {
+    min-width: 300px;
+    width: auto;
+    max-width: 400px;
+    height: auto;
+}
+
+footer {
+    background-color: #f2b705;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+footer div {
+    padding: 10px;
+}
+
+/*
+iframe {
+   background-color: #000000;
+}
+*/
+
+/* Switch #Donate images with text */
+@media (max-width: 876px) {
+    section article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#donate {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Wrap footer */
+@media (max-width: 872px) {
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Adjust Main Text and Image */
+@media (max-width: 650px) {
+    main div img {
+        width: 100%;
+    }
+
+    main article {
+        padding-left: 3%;
+    }
+}
+
+/* Adjust Navigation */
+@media (max-width: 452px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav img {
+        margin: 0px;
+    }
+
+    nav div {
+        margin: 15px 5px;
+    }
+
+    nav div a {
+        padding: 10px 5px;
+    }
+}
+
+/* Adjust Header buttons and Logo */
+@media (max-width: 450px) {
+    header img {
+        min-width: 100%;
+    }
+
+    header div {
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,52 @@
+div#frame {
+    scale: 100%;
+}
+
+/* Viewports */
+@media screen and (max-width: 980px) {
+    div#frame {
+        scale: 90%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    div#frame {
+        scale: 80%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    div#frame {
+        scale: 75%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    div#frame {
+        scale: 70%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    div#frame {
+        scale: 65%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    div#frame {
+        scale: 60%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    div#frame {
+        scale: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div#frame {
+        scale: 40%;
+    }
+}
