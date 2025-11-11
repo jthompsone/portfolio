@@ -31,6 +31,7 @@ div.nav {
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 1;
 }
 
 .logo {
@@ -106,6 +107,7 @@ footer {
     margin: 0px;
     padding: 0px;
     display: flex;
+    z-index: 1;
 }
 
 footer > div {
