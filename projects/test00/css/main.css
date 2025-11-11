@@ -9,11 +9,6 @@ body {
     color: #000000;
 }
 
-div {
-    background-color: #e8e8e8;
-    border: 0px solid #000000;
-}
-
 /*PARENT ELEMENT*/
 div#frame {
     background-color: #616362;
