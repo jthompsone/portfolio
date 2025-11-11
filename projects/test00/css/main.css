@@ -23,6 +23,7 @@ div#frame {
     left: 0px;
     z-index: 0;
     transform-origin: 0% 0%;
+    overflow: hidden;
 }
 
 /* Back Wall*/
