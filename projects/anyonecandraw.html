@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Anyone Can Draw app</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="../images/logo-favicon.png"
+        />
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body>
+        <div class="root">
+            <div class="nav">
+                <img
+                    src="../images/logo-color.png"
+                    alt="J E T Logo"
+                    class="logo"
+                />
+                <nav class="mainNav">
+                    <a href="../index.html">Home</a>
+                    <a href="../projects.html" id="youAreHere">Projects</a>
+                    <a href="../about.html">About</a>
+                </nav>
+                <p class="designer marRight">Web Designer</p>
+            </div>
+
+            <!-- THE PROJEECT -->
+            <div class="container">
+                <h1>Anyone Can Draw app</h1>
+                <p>UI/UX Design</p>
+                <h2>The Idea:</h2>
+                <p>
+                    The Anyone Can Draw app would be a vector-based drawing app
+                    somewhat similar to Adobe Illustrator. You can draw with
+                    something like the Pen Tool, or free hand it and refine it
+                    after it's drawn. The app would work on most
+                    smartphones/tablets, and even other touchscreen devices like
+                    Chromebooks! You can either use your fingers or a stylus to
+                    draw, so long as it's compatible with your device. The app
+                    would also have tutorials/guides on how to get started
+                    drawing, and there would also be tooltips for when using the
+                    app.
+                </p>
+                <p>
+                    What I'm trying to solve with my app is people's fear of
+                    learning something new, specifically drawing in this case.
+                    It can be hard to start something new, especially without
+                    help. That's this app aims to do, guide people on how to
+                    start drawing and show them the process behind it, so they
+                    can feel comfortable doing it on their own later on.
+                </p>
+                <h2>Developing Personas:</h2>
+                <h3>Proto-Personas</h3>
+                <p>
+                    Before getting to design proper personas by doing user
+                    interviews, I developed proto-personas by trying to get in
+                    the mindset of three unique users who would be interested in
+                    using my app.
+                </p>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/Proto-Persona1.jpg"
+                        alt="Proto Persona 1"
+                    />
+                    <figcaption>Proto Persona 1</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/Proto-Persona2.jpg"
+                        alt="Proto Persona 2"
+                    />
+                    <figcaption>Proto Persona 2</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/Proto-Persona3.jpg"
+                        alt="Proto Persona 3"
+                    />
+                    <figcaption>Proto Persona 3</figcaption>
+                </figure>
+                <h3>Personas</h3>
+                <p>
+                    I put out a user survey to find good applicants who would
+                    make the basis of my actual personas. After getting 21
+                    responses to my survey, I then narrowed down my portential
+                    candidate users to 7, and reached out again to them to get 3
+                    declines, and 4 who agreed; I would have the 4th person be a
+                    backup in case any of the first three couldn't do the
+                    interview anymore. I would then interview the 3 final
+                    candidate users using a user interview script, and record
+                    each candidate's responses in a text document, which I then
+                    used to develope fully fleshedout personas, but with
+                    personal details removed from the actual user.
+                </p>
+                <figure>
+                    <img src="anyoneCanDraw/Persona1.jpg" alt="Persona 1" />
+                    <figcaption>Persona 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="anyoneCanDraw/Persona2.jpg" alt="Persona 2" />
+                    <figcaption>Persona 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="anyoneCanDraw/Persona3.jpg" alt="Persona 3" />
+                    <figcaption>Persona 3</figcaption>
+                </figure>
+                <h2>Empathy Maps</h2>
+                <p>
+                    From the newly created personas, I would then move ahead to
+                    create empathy maps for each persona.
+                </p>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/Persona1-EM.jpg"
+                        alt="Empathy Map - Persona 1"
+                    />
+                    <figcaption>Empathy Map - Persona 1</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/Persona2-EM.jpg"
+                        alt="Empathy Map - Persona 2"
+                    />
+                    <figcaption>Empathy Map - Persona 2</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/Persona3-EM.jpg"
+                        alt="Empathy Map - Persona 3"
+                    />
+                    <figcaption>Empathy Map - Persona 3</figcaption>
+                </figure>
+
+                <h2>MVP</h2>
+                <p>Next I created MVP or Minimal Viable Product user stories</p>
+                <table class="mvp">
+                    <tr>
+                        <th>MVP Features</th>
+                        <th>User Stories</th>
+                        <th>UI Requirements</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">View template designs</td>
+                        <td>
+                            As a user, I want to view what designs I can draw
+                        </td>
+                        <td>Thumbnails of drawing templates</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I want to preview a larger image of the
+                            drawing template
+                        </td>
+                        <td>
+                            Open a larger preview of the drawing template
+                            complete
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">View by category</td>
+                        <td>As a user, I want to sort templates by category</td>
+                        <td>Have a sort by category option</td>
+                    </tr>
+                    <tr>
+                        <td>As a user, I want to filter by category</td>
+                        <td>
+                            Have a category filter to show only selected
+                            categories
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Search designs</td>
+                        <td>
+                            As a user, I want to search for a drawing template
+                            by name
+                        </td>
+                        <td>Have search for specific drawing templates</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I want to search by drawing template name
+                            or category
+                        </td>
+                        <td>
+                            Search results show categories or drawing template
+                            by name
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Selecting a template</td>
+                        <td>
+                            As a user, I would like to select a template to
+                            begin drawing
+                        </td>
+                        <td>Open selected template</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="13">Drawing aid</td>
+                        <td>
+                            As a user, I want to see a step-by-step how to draw
+                            process
+                        </td>
+                        <td>
+                            Show each step and animate the line connecting the
+                            dots
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I want to follow dots to connect to form
+                            lines of my drawing
+                        </td>
+                        <td>
+                            Show dots evenly spaced that form the lines of the
+                            drawing step
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I want the animation guide to replay if I
+                            haven't started the line yet
+                        </td>
+                        <td>
+                            Loop animation of drawing step connecting the dots
+                            every few seconds until the user starts drawing
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I want to be able to turn off the
+                            animated guide
+                        </td>
+                        <td>
+                            Ability to turn off the animated guide connecting
+                            the dots
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I want the ability to turn off the
+                            guiding dots connecting making the line
+                        </td>
+                        <td>Turn off the guide dots</td>
+                    </tr>
+                    <tr>
+                        <td>As a user, I would like lines to trace</td>
+                        <td>Display tracing lines</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to turn off the tracing
+                            lines
+                        </td>
+                        <td>Hide the tracing lines</td>
+                    </tr>
+                    <tr>
+                        <td>As a user, I want to view a grid</td>
+                        <td>Display drawing grid</td>
+                    </tr>
+                    <tr>
+                        <td>As a user, I want to hide the grid</td>
+                        <td>Hide drawing grid</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to navigate to the next
+                            drawing step
+                        </td>
+                        <td>Have a next step button</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to navigate to the previous
+                            step
+                        </td>
+                        <td>Have a previous step button</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to see how many total steps
+                            there are for a given drawing
+                        </td>
+                        <td>Show total number of steps in a drawing</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to see the current step
+                            number I am viewing
+                        </td>
+                        <td>Show current step number being viewed</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="16">Drawing</td>
+                        <td>As a user, I would like to draw on the screen</td>
+                        <td>Ability to draw in the app on the screen</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like the ability to change brush
+                            colors
+                        </td>
+                        <td>Ability to change brush colors</td>
+                    </tr>
+                    <tr>
+                        <td>As a user, I would like to change brush size</td>
+                        <td>Ability to change brush size</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like the ability to undo mistakes
+                        </td>
+                        <td>Undo last drawing segment</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to redo a drawing segment I
+                            made
+                        </td>
+                        <td>Redo last undone drawing segment</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like the ability to erase
+                            mistakes
+                        </td>
+                        <td>Eraser tool</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like the ability to draw straight
+                            lines
+                        </td>
+                        <td>
+                            Press somewhere/button to make straight lines
+                            between points
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like the ability to make nice
+                            curved lines
+                        </td>
+                        <td>
+                            Have ability for line segments to be adjusted to
+                            curves of varying degrees
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like the ability to fill an
+                            area/drawing segment a different color
+                        </td>
+                        <td>Fill area/section color tool (paint bucket)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to preview a straight line I
+                            am drawing before finalizing it
+                        </td>
+                        <td>Drag-n-drop line drawing, from point a to b</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to be able to select a
+                            portion of my screen/drawing
+                        </td>
+                        <td>
+                            Selection tool to select an area or parts of
+                            drawings
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to move selected
+                            area/segments to other parts on the drawing
+                        </td>
+                        <td>Move tool</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to be able to copy a portion
+                            of my selected drawing
+                        </td>
+                        <td>Copy tool</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to paste a copied portion of
+                            my drawing and move/place it into place
+                        </td>
+                        <td>
+                            Paste tool, allows dragging to location before set
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to be able to delete a
+                            selected segment/area
+                        </td>
+                        <td>Delete selected tool</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I want to be able to zoom in and out on
+                            my drawings.
+                        </td>
+                        <td>Pinch to zoom in/out with two fingers</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Save</td>
+                        <td>
+                            As a user, I would like to save my work in progress
+                        </td>
+                        <td>Save drawing so far to edit later</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            As a user, I would like to save a completed drawing
+                            to my device
+                        </td>
+                        <td>Save/export drawing</td>
+                    </tr>
+                    <tr>
+                        <td>Open Drawings</td>
+                        <td>
+                            As a user, I would like to open previously saved
+                            drawings
+                        </td>
+                        <td>Saved file browser Open selected file</td>
+                    </tr>
+                    <tr>
+                        <td>Delete Drawings</td>
+                        <td>As a user, I would like to delete old drawings</td>
+                        <td>Delete drawings, but not templates</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Suggestions / Contact</td>
+                        <td>
+                            As a user, I would like to submit new drawing
+                            template ideas
+                        </td>
+                        <td>Drawing template idea name Submit button</td>
+                    </tr>
+                    <tr>
+                        <td>As a user, I would like to contact support</td>
+                        <td>
+                            Button to open support form (your email,
+                            description, send button)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>App Details</td>
+                        <td>
+                            As a user, I would like to know the app version I am
+                            on
+                        </td>
+                        <td>Display app version</td>
+                    </tr>
+                </table>
+
+                <h2>User Flows</h2>
+                <p>
+                    Persona 1 - Mike (Experienced) wants to view some old
+                    drawings, export them, and then delete some saves of early
+                    drawings that are taking up space, and then start a fresh
+                    new drawing without any guides.
+                </p>
+                <figure>
+                    <img src="anyoneCanDraw/userflow1.jpg" alt="User Flow 1" />
+                    <figcaption>User Flow 1</figcaption>
+                </figure>
+                <p>
+                    Persona 2 - Jamie (Intermediate) wants to preview some of
+                    their existing drawings, then getting inspired, wants to
+                    resume a previously unfinished drawing, they don't need the
+                    animations.
+                </p>
+                <figure>
+                    <img src="anyoneCanDraw/userflow2.jpg" alt="User Flow 2" />
+                    <figcaption>User Flow 2</figcaption>
+                </figure>
+                <p>
+                    Persona 3 - Tony (Beginner) wants to start drawing a simple
+                    drawing, to get started. He selects one of the first listed
+                    on the Templates page.
+                </p>
+                <figure>
+                    <img src="anyoneCanDraw/userflow3.jpg" alt="User Flow 3" />
+                    <figcaption>User Flow 3</figcaption>
+                </figure>
+
+                <h2>Wireframe Sketches</h2>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/wireframeSketch1.jpg"
+                        alt="Wireframe Sketch 1 of 5"
+                    />
+                    <figcaption>Wireframe Sketch 1 of 5</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/wireframeSketch2.jpg"
+                        alt="Wireframe Sketch 2 of 5"
+                    />
+                    <figcaption>Wireframe Sketch 2 of 5</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/wireframeSketch3.jpg"
+                        alt="Wireframe Sketch 3 of 5"
+                    />
+                    <figcaption>Wireframe Sketch 3 of 5</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/wireframeSketch4.jpg"
+                        alt="Wireframe Sketch 4 of 5"
+                    />
+                    <figcaption>Wireframe Sketch 4 of 5</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/wireframeSketch5.jpg"
+                        alt="Wireframe Sketch 5 of 5"
+                    />
+                    <figcaption>Wireframe Sketch 5 of 5</figcaption>
+                </figure>
+
+                <h2>Low-Fi Wireframe</h2>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/lofi-wireframe.jpg"
+                        alt="Low-Fi Wireframe"
+                    />
+                    <figcaption>Low-Fi Wireframe</figcaption>
+                </figure>
+
+                <h2>Color Scheme</h2>
+                <p>
+                    I used Adobe Color to come up with some color schemes that
+                    could work for my app. Starting with complementary colors,
+                    to triad, then I tried two monochromatic styles, and a I did
+                    one split complementary.
+                </p>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/colorSchemes.jpg"
+                        alt="Five possilbe color schemes, each with five colors"
+                    />
+                    <figcaption>
+                        Five possilbe color schemes, each with five colors
+                    </figcaption>
+                </figure>
+
+                <h2>Style Tile</h2>
+                <p>
+                    I liked the split complementary color scheme the most, and
+                    moved forward with that one.
+                </p>
+                <figure>
+                    <img src="anyoneCanDraw/styleTile1.jpg" alt="Style Tile" />
+                    <figcaption>Style Tile</figcaption>
+                </figure>
+
+                <h2>Completed Wireframe</h2>
+                <figure>
+                    <img
+                        src="anyoneCanDraw/prototype-v1.jpg"
+                        alt="Full color wireframe"
+                    />
+                    <figcaption>Full color wireframe</figcaption>
+                </figure>
+                <div class="endSpace">
+                    <h2>Demo & PDF</h2>
+                    <a
+                        href="https://www.figma.com/proto/PfD1IXMTJYqDWgQirTe08D/UX-Design-Anyone-Can-Draw-App?node-id=63-2820&p=f&viewport=162%2C164%2C0.24&t=Suic87G2pVC6ArK7-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=63%3A2821"
+                        target="_blank"
+                        class="largeButton"
+                        >Figma Prototype</a
+                    >
+                    <br />
+                    <a
+                        href="anyoneCanDraw/AnyoneCanDrawApp-v1.pdf"
+                        target="_blank"
+                        class="largeButton"
+                        >Anyone Can Draw app Project Version 1 PDF</a
+                    >
+                </div>
+            </div>
+            <!-- END PROJEECT -->
+
+            <footer>
+                <a href="#" class="toTop">
+                    <img
+                        src="../images/logo-color.png"
+                        alt="J E T Logo"
+                        class="logo"
+                    />
+                </a>
+                <div><p>© James E. Thompson</p></div>
+                <nav class="footNav">
+                    <a
+                        href="https://www.linkedin.com/in/jthompsone"
+                        target="_blank"
+                    >
+                        <img
+                            src="../images/icon-linkedin.png"
+                            alt="James on LinkedIn"
+                        />
+                        <p class="hideMe">LinkedIn</p>
+                    </a>
+                    <a href="https://github.com/jthompsone" target="_blank">
+                        <img
+                            src="../images/icon-github.png"
+                            alt="James on GitHub"
+                        />
+                        <p class="hideMe">GitHub</p>
+                    </a>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>
