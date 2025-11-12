@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>DELUXE Grid - Thompson</title>
+
+<style>
+    .wrapper > div {
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+
+    .wrapper {
+        width: 80%;
+        height: 700px;
+        margin: 0 auto;
+        background-color: azure;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+
+    .header {
+        background-color: #FF9B6D;
+        padding: 10px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 9fr;
+        grid-template-rows: 1fr;
+    }
+
+
+    .logo {
+        background-color: #FFD37C;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .nav {
+        background-color: #FFD37C;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .aside {
+        background-color: #ceea41;
+        padding: 10px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .news {
+        background-color: #a9ba4f;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .events {
+        background-color: #a9ba4f;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+    }
+
+    .contact {
+        background-color: #a9ba4f;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .main {
+        background-color: #7DBCA9;
+        padding: 10px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .first {
+        background-color: #8de1ca;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .second {
+        background-color: #8de1ca;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .third {
+        background-color: #8de1ca;
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .footer {
+        padding: 10px;
+        background-color: #87CEEB;
+        padding: 10px;
+        grid-column: 2 / 3;
+        grid-row: 3 /4;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .copy {
+        background-color: #8a9dc7;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .logo2 {
+        background-color: #8a9dc7;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <!-- header -->
+
+            <div class="logo">Logo</div>
+            <div class="nav">navigation</div>
+
+        </div>
+
+        <div class="aside">
+            <!-- aside -->
+
+            <div class="news">News</div>
+            <div class="events">Events</div>
+            <div class="contact">Contact</div>
+
+        </div>
+
+        <div class="main">
+            <!-- main -->
+
+            <div class="first">first</div>
+            <div class="second">second</div>
+            <div class="third">third</div>
+
+        </div>
+
+        <div class="footer">
+            <!-- footer -->
+        
+            <div class="copy">&#169;2020 Programming for Designers</div>
+            <div class="logo2">logo</div>
+        
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -224,6 +224,10 @@ p#email {
 .about > ul {
     margin: 0px auto 20px;
 }
+.centerMe {
+    margin: 5px auto 5px auto;
+    display: block;
+}
 
 .endSpace {
     width: 100%;
@@ -275,6 +279,16 @@ figure {
 figure > img {
     width: 100%;
     padding: 10px;
+}
+
+.max500 {
+    max-width: 500px;
+    height: auto;
+}
+
+.max1000 {
+    max-width: 1000px;
+    height: auto;
 }
 
 figcaption {
