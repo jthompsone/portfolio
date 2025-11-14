@@ -281,6 +281,16 @@ figure > img {
     padding: 10px;
 }
 
+.max500 {
+    max-width: 500px;
+    height: auto;
+}
+
+.max1000 {
+    max-width: 1000px;
+    height: auto;
+}
+
 figcaption {
     text-align: center;
     margin-bottom: 50px;
