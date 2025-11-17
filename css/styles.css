@@ -92,6 +92,11 @@ a:active {
     color: #fff;
 }
 
+a.inlineLink {
+    text-decoration: underline;
+    padding: 0px;
+}
+
 nav > a#youAreHere {
     background-color: #dd7299;
 }
@@ -279,16 +284,6 @@ figure {
 figure > img {
     width: 100%;
     padding: 10px;
-}
-
-.max500 {
-    max-width: 500px;
-    height: auto;
-}
-
-.max1000 {
-    max-width: 1000px;
-    height: auto;
 }
 
 figcaption {
