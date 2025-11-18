@@ -160,6 +160,17 @@ footer > div {
     font-style: italic;
 }
 
+div.thumbs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.thumbs figure {
+    max-width: 250px;
+}
+
 /* General Element Styles */
 h1 {
     margin-bottom: 10px;
@@ -175,6 +186,15 @@ h3 {
 
 p {
     margin-bottom: 6px;
+}
+
+.nav p,
+footer p {
+    margin-bottom: auto;
+}
+
+hr {
+    margin: 2em auto 2em auto;
 }
 
 li {
@@ -275,7 +295,7 @@ table.mvp {
     vertical-align: top;
 }
 
-/* Personas */
+/* Figure */
 figure {
     width: 80%;
     margin: 10px auto 10px auto;
