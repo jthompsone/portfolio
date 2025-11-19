@@ -156,6 +156,13 @@ footer > div {
     flex: 1;
 }
 
+.contact {
+    min-width: 300px;
+    width: 50%;
+    max-width: 500px;
+    margin: 2em auto 2em auto;
+}
+
 .titleEmphasis {
     font-style: italic;
 }
@@ -169,6 +176,12 @@ div.thumbs {
 }
 .thumbs figure {
     max-width: 250px;
+}
+
+.iconLink {
+    width: auto;
+    height: 20pt;
+    vertical-align: middle;
 }
 
 /* General Element Styles */
@@ -195,6 +208,11 @@ footer p {
 
 hr {
     margin: 2em auto 2em auto;
+}
+hr.shortLeft {
+    min-width: 250px;
+    width: 50%;
+    margin: 1.5em 1em 1em;
 }
 
 li {
