@@ -237,10 +237,6 @@ img#portrait {
     height: auto;
 }
 
-p#email {
-    font-size: min(1.5vw, 12pt);
-}
-
 .midNav {
     height: 75px;
     width: 80%;
