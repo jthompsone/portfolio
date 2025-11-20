@@ -153,6 +153,7 @@ footer > div {
     max-width: 1500px;
     height: auto;
     margin: 50px auto auto auto;
+    padding: 0px 10px 10px 10px;
     flex: 1;
 }
 
@@ -221,10 +222,10 @@ li {
 
 aside {
     width: 25%;
+    max-width: 350px;
     height: auto;
     float: left;
 }
-
 aside > p {
     font-weight: 500;
     margin: 5px auto 8px auto;
@@ -259,14 +260,13 @@ p#email {
     padding: 15px 0px 50px 15px;
     float: right;
 }
-
 .about > p {
     margin: 20px auto 5px;
 }
-
 .about > ul {
     margin: 0px auto 20px;
 }
+
 .centerMe {
     margin: 5px auto 5px auto;
     display: block;
