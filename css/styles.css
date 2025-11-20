@@ -390,7 +390,7 @@ figcaption {
 
     .container {
         min-width: 320px;
-        width: 100%;
+        width: auto;
         margin: 50px 0px 50px 0px;
     }
 
