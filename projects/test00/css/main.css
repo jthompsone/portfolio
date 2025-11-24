@@ -1,14 +1,4 @@
 /*---------By James E. T.-----------*/
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    background-color: #ffffff;
-    color: #000000;
-}
-
 /*PARENT ELEMENT*/
 div#frame {
     background-color: #616362;
