@@ -335,6 +335,11 @@ figcaption {
     margin: 15px auto 0px auto;
 }
 
+.max390 {
+    max-width: 390px;
+    height: auto;
+}
+
 .max500 {
     max-width: 500px;
     height: auto;
