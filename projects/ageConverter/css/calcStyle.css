@@ -1,0 +1,59 @@
+#calculator {
+    margin: 15px auto 15px auto;
+    width: 500px;
+    height: 500px;
+}
+
+#fileInButton {
+    float: left;
+    margin: 3px 5px 5px auto;
+}
+
+.clear {
+    clear: left;
+}
+
+#group1,
+#group2 {
+    width: 200px;
+    height: 220px;
+    float: left;
+    margin: 0px auto 15px auto;
+}
+
+#group3,
+#group4 {
+    width: 200px;
+    float: left;
+    padding: 5px;
+    margin: 10px auto 10px auto;
+}
+
+#sListOne,
+#sListTwo {
+    width: inherit;
+    height: 170px;
+    margin: 2px auto 2px 50px;
+}
+
+#selectorList1,
+#selectorList2 {
+    width: 100px;
+    margin: 10px auto 5px auto;
+}
+
+#descript1,
+#descript2 {
+    text-align: center;
+    margin: 35px auto 5px auto;
+}
+
+#name1,
+#name2 {
+    font-style: italic;
+}
+
+#age1,
+#age2 {
+    text-decoration: underline;
+}

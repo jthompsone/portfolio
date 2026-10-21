@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Data Creator</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="menuArea">
+            <ul id="menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="calc.html">Converter</a></li>
+                <li><a href="data.html" id="here">Creator</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <button id="create">Create file</button>
+            <a download="info.txt" id="downloadlink" style="display: none"
+                >Download</a
+            >
+            <h1 id="header">List</h1>
+            <div id="newItemButton">
+                <button href="#" id="showForm">new item</button>
+            </div>
+            <form id="newItemForm">
+                <input
+                    type="text"
+                    id="itemDescription"
+                    placeholder="Add description..."
+                />
+                <input type="number" id="itemAge" />
+                <input type="submit" id="addButton" value="add" />
+            </form>
+            <ul id="newData"></ul>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-2.2.3.min.js"
+            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/dataCreator.js"></script>
+    </body>
+</html>

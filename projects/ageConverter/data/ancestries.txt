@@ -1,0 +1,15 @@
+aarakocra:30
+dragonborn:220
+dwarf:250
+eladrin:300
+elf:350
+gnoll:30
+gnome:200
+half-elf:125
+half-orc:60
+halfling:100
+high-elf:350
+human:85
+lupin:22
+orc:80
+tiefling:100

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Test Reader - Line by Line</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/calcStyle.css" />
+    </head>
+    <body>
+        <div id="menuArea">
+            <ul id="menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="calc.html" id="here">Converter</a></li>
+                <li><a href="data.html">Creator</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <p>
+                Use this
+                <a href="data/ancestries.txt" download>ancestries.txt</a> file
+                to load data and run calculator.
+            </p>
+            <div id="calculator">
+                <input
+                    type="file"
+                    name="inFile"
+                    id="fileInButton"
+                    accept=".txt"
+                />
+                <div id="group1" class="clear">
+                    <div id="sListOne"></div>
+                    <p id="descript1"></p>
+                </div>
+                <div id="group2">
+                    <div id="sListTwo"></div>
+                    <p id="descript2"></p>
+                </div>
+                <div id="group3" class="clear">
+                    <p id="inputDescript">Input age:</p>
+                    <input
+                        type="number"
+                        name="inputAge"
+                        id="inputAgetxt"
+                        placeholder="Base age"
+                        step="1"
+                        min="1"
+                        required
+                    />
+                </div>
+                <div id="group4">
+                    <p id="outputDescript">Relative age result:</p>
+                    <input
+                        type="text"
+                        name="resultingAge"
+                        id="outputAgetxt"
+                        placeholder="Resulting age"
+                        readonly
+                    />
+                    <input
+                        type="button"
+                        name="calculateBtn"
+                        id="calcButton"
+                        value="Calculate"
+                        onclick="validateInput()"
+                    />
+                </div>
+            </div>
+        </div>
+        <script src="js/converter.js"></script>
+    </body>
+</html>
