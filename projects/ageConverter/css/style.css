@@ -2,7 +2,7 @@ body {
     background-color: #ffdab9;
 }
 
-#main {
+#acMain {
     width: 600px;
     height: auto;
     min-height: 400px;
@@ -12,7 +12,7 @@ body {
     padding: 20px;
 }
 
-#menuArea {
+#acMenuArea {
     background: none;
     width: 600px;
     height: auto;
@@ -20,17 +20,17 @@ body {
     padding: 0px 10px;
 }
 
-ul#menu {
+ul#acMenu {
     margin: 0px;
     list-style: none;
 }
 
-ul#menu li {
+ul#acMenu li {
     display: inline-block;
     margin: 0px 10px 0px 0px;
 }
 
-#menu li a {
+#acMenu li a {
     display: block;
     background-color: skyblue;
     color: #000000;
@@ -45,7 +45,7 @@ ul#menu li {
     font-weight: bold;
 }
 
-#menu li a:hover {
+#acMenu li a:hover {
     background-color: orange;
 }
 

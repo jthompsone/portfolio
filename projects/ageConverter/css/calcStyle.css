@@ -1,7 +1,8 @@
 #calculator {
     margin: 15px auto 15px auto;
     width: 500px;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
 }
 
 #fileInButton {
@@ -9,36 +10,64 @@
     margin: 3px 5px 5px auto;
 }
 
-.clear {
-    clear: left;
+.container {
+    display: flex;
 }
 
-#group1,
-#group2 {
-    width: 200px;
-    height: 220px;
-    float: left;
-    margin: 0px auto 15px auto;
+.parent {
+    width: 100%;
+    min-width: 225px;
+    display: grid;
+    grid-template: 250px / auto;
+    grid-gap: 10px;
 }
 
-#group3,
-#group4 {
-    width: 200px;
-    float: left;
-    padding: 5px;
-    margin: 10px auto 10px auto;
+.parent > div {
+    display: inline-block;
+    width: 100%;
+    min-width: 200px;
+    align-items: center;
 }
 
-#sListOne,
-#sListTwo {
-    width: inherit;
+.one {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.two {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.three {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.four {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.one,
+.two {
+    min-height: 300px;
+}
+
+.three,
+.four {
+    min-height: 150px;
+}
+
+.listSelect {
+    width: auto;
     height: 170px;
     margin: 2px auto 2px 50px;
 }
 
+.container div p {
+    text-align: center;
+}
+
 #selectorList1,
 #selectorList2 {
-    width: 100px;
+    width: 125px;
     margin: 10px auto 5px auto;
 }
 
@@ -56,4 +85,9 @@
 #age1,
 #age2 {
     text-decoration: underline;
+}
+
+input {
+    display: block;
+    margin: 5px auto 20px auto;
 }

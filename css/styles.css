@@ -97,6 +97,12 @@ a.inlineLink {
     padding: 0px;
 }
 
+.backToProjects > a {
+    text-decoration: underline;
+    margin: 15px 20px 0px;
+    display: inline-block;
+}
+
 nav > a#youAreHere {
     background-color: #dd7299;
 }

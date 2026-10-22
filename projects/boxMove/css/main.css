@@ -2,12 +2,6 @@ body {
     background: none;
 }
 
-a {
-    text-decoration: underline;
-    margin: 15px 20px 0px;
-    display: inline-block;
-}
-
 #ground {
     background-color: #ffe4b2;
     width: 500px;
