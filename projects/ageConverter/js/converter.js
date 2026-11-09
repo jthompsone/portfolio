@@ -27,12 +27,13 @@ class Ancestries {
     }
 }
 
+// On change of file, run fucntion
 document.getElementById("fileInButton").addEventListener("change", (event) => {
     const file = event.currentTarget.files?.[0];
     if (!file) return;
     const reader = new FileReader();
     reader.addEventListener("load", () => {
-        myAncestries = []; //Clear previous data (if any)
+        myAncestries = []; //Clear previous data if any
         const lines = reader.result.split("\n"); //used to create an array of every line read from the input file, where a return was found, create new node
         for (let i = 0; i < lines.length; i++) {
             lines[i] = lines[i].trim(); //Some pre-validator safeguards, remove whitespaces
@@ -57,8 +58,6 @@ document.getElementById("fileInButton").addEventListener("change", (event) => {
     reader.readAsText(file); //read in a file
 });
 
-// On change of file, run fucntion
-
 // Custom compare method, as the default compare() method would not work with comparing Ancestries objects
 const compare = (a, b) => {
     if (a.name < b.name) {
@@ -79,8 +78,8 @@ const sortAncestries = () => {
 // Removes any invalid data from the myAncestries array if found
 const dataValidator = () => {
     for (let j = 0; j < myAncestries.length; j++) {
-        let names = myAncestries[j].name; // store the Ancestries' name into n
-        let ages = myAncestries[j].age; // store the Ancestries' age into a
+        let names = myAncestries[j].name; // store the Ancestries' name into names
+        let ages = myAncestries[j].age; // store the Ancestries' age into ages
 
         // If a is NOT numeric or n is blank, then remove from the array
         if (!isNum(ages) || names == "") {
@@ -89,6 +88,7 @@ const dataValidator = () => {
     }
 };
 
+// TO UPDATE: use a JS event listner instead of the HTML "onchange" attribute.
 const writeList = () => {
     sortAncestries(); // sort myAncestries into alphabetical order
     let elOne = document.getElementById("sListOne");
@@ -110,6 +110,7 @@ const writeList = () => {
     }
 };
 
+// TO DO: Combine both displayAncestries into one fuction
 // Display data from the selected list item from the first list
 const displayAncestries1 = () => {
     let x = document.getElementById("selectorList1").value;
