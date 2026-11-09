@@ -64,6 +64,12 @@ const moveRight = () => {
     else setPlayerLeft(setXMove);
 };
 
+// Touch Controls
+document.getElementById("cup").addEventListener("click", moveUp);
+document.getElementById("cdown").addEventListener("click", moveDown);
+document.getElementById("cleft").addEventListener("click", moveLeft);
+document.getElementById("cright").addEventListener("click", moveRight);
+
 const init = () => {
     document.body.addEventListener("keydown", function (event) {
         const key = event.key;

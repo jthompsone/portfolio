@@ -6,10 +6,12 @@ body {
     background-color: #ffe4b2;
     width: 500px;
     height: 500px;
-    border: 1px solid #000000;
-    margin: 100px auto auto auto;
+    border: 0px solid #000000;
+    margin: 0px auto auto auto;
     position: relative;
-    z-index: 0;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
 }
 
 #player {
@@ -21,4 +23,59 @@ body {
     top: 0px;
     left: 0px;
     z-index: 1;
+}
+
+#controlPad {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 15px auto 25px auto;
+    position: relative;
+    z-index: 2;
+}
+
+.cPad {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+#cup {
+    margin: 0px auto auto auto;
+    position: relative;
+    top: 0px;
+}
+
+#cdown {
+    margin: auto auto 0px auto;
+    position: relative;
+}
+
+#horizontal {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#cleft,
+#cright {
+    margin: 2.5% auto 2.5% auto;
+    position: relative;
+    display: inline-block;
+}
+
+#cleft {
+    float: left;
+    margin-left: 0px;
+}
+#cright {
+    float: right;
+    margin-right: 0px;
 }
